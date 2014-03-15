@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+>
+<LinearLayout
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:padding="5dp"  
+  >
+  
+  <LinearLayout		  
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  android:orientation="vertical"
+		  android:padding="5dp"
+		  >
+	  <TextView 
+	  	android:text="@string/txt_name"
+	  	android:textColor="#8CC1D8"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	    />
+	   <EditText android:id="@+id/p_proizvod"
+			  android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+			/>
+	</LinearLayout>
+	  
+  <LinearLayout android:orientation="horizontal"
+    android:gravity="right"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:paddingRight="10dp"  	
+  	>
+  
+		  <TextView android:text="@string/txtKolicina"
+		  				  android:textColor="#8CC1D8"
+		  					android:layout_width="fill_parent"
+		  					android:layout_height="wrap_content"
+		  					android:paddingRight="20dp"  		
+		  					android:layout_weight="1"			
+		   />
+		  <Button			android:id="@+id/p_kolAdd"
+		  						android:onClick="setKol"
+			  					android:text="+"
+			  					android:layout_width="wrap_content"
+			  					android:layout_height="wrap_content"	
+			  					android:background="@drawable/ic_btn"
+			  					android:textColor="@drawable/ic_btn_color"
+			  					android:textSize="25dp"			  							  			
+			  			/>
+		  <TextView android:id="@+id/p_kolicina"
+		  					android:text="0"
+		  					android:textSize="30dp"
+		  					android:textColor="#FAA51B"  					  				
+		  					android:layout_width="wrap_content"
+		  					android:layout_height="60dp"
+		  					android:paddingRight="20dp"
+		  					android:paddingLeft="20dp"
+		   />
+		
+		  <Button			android:id="@+id/p_kolSub"
+		  						android:onClick="setKol"
+			  					android:text="-"
+			  					android:layout_width="wrap_content"
+			  					android:layout_height="wrap_content"	
+			  					android:background="@drawable/ic_btn"
+			  					android:textColor="@drawable/ic_btn_color"
+			  					android:textSize="25dp"			  							  			
+			  			/>		
+  </LinearLayout> 
+  
+  <LinearLayout android:orientation="horizontal"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:paddingRight="5dp"
+  	android:paddingTop="5dp"
+  	android:paddingBottom="10dp"
+  	android:gravity="center_horizontal"
+  	>
+  
+  	<TextView android:text="@string/txtCijena"
+	  					android:textColor="#8CC1D8"
+	  					android:layout_width="wrap_content"
+	  					android:layout_height="wrap_content"
+	  					android:paddingTop="5dp"
+	  					 />
+  
+	  <TableLayout android:orientation="vertical"
+								 android:layout_width="fill_parent"
+								 android:layout_height="wrap_content">
+  		<TableRow>
+		  		<TextView android:id="@+id/p_cijena"
+			   				  android:gravity="right"
+			   				  android:textStyle="bold"
+			   					android:text="0.00 kn"
+			   					android:textSize="30dp"
+				  				android:textColor="#FAA51B" 		  				 
+			  					android:layout_width="fill_parent"
+			  					android:layout_height="wrap_content"
+			  					android:paddingRight="10dp" 
+			  					android:layout_weight="1"				  					 								
+			   />
+			  
+				  <ImageButton	      
+				  		android:id="@+id/p_editCijena"
+				  		android:src="@drawable/ic_delete"
+				  		android:layout_width="wrap_content"
+				  		android:layout_height="wrap_content"
+				  		android:scaleType="center"
+				  		android:paddingLeft="10dp"
+				  		android:background="@null"
+				  		android:onClick="resetCijena"
+				  />
+  		</TableRow>
+	  	<TableRow>
+	  		<LinearLayout android:orientation="horizontal"
+									  	android:layout_width="fill_parent"
+									  	android:layout_height="wrap_content"									  	
+									  	android:gravity="right"
+									  	android:paddingRight="5dp"	 	
+									  	android:layout_weight="1"									  						  	
+									  	android:paddingBottom="10dp"
+									  	>
+			  			<!-- Brojevi -->
+			  			<Button
+			  					android:id="@+id/p_broj1"
+			  					android:onClick="addBroj"
+			  					android:text="1"
+			  					android:layout_width="wrap_content"
+			  					android:layout_height="wrap_content"	
+			  					android:background="@drawable/ic_btn"
+			  					android:textColor="@drawable/ic_btn_color"
+			  					android:textSize="25dp"				  														  							  		
+			  			/>
+			  			<Button
+			  					android:id="@+id/p_broj2"
+			  					android:onClick="addBroj"
+			  					android:text="2"
+			  					android:layout_width="wrap_content"
+			  					android:layout_height="wrap_content"	
+			  					android:background="@drawable/ic_btn"
+			  					android:textColor="@drawable/ic_btn_color"
+			  					android:textSize="25dp"
+			  						  			
+			  			/>
+			  			<Button
+			  					android:id="@+id/p_broj3"
+			  					android:onClick="addBroj"
+			  					android:text="3"
+			  					android:layout_width="wrap_content"
+			  					android:layout_height="wrap_content"	
+			  					android:background="@drawable/ic_btn"
+			  					android:textColor="@drawable/ic_btn_color"
+			  					android:textSize="25dp"
+			  							  			
+			  			/>
+			  			<Button
+			  					android:id="@+id/p_broj4"
+			  					android:onClick="addBroj"
+			  					android:text="4"
+			  					android:layout_width="wrap_content"
+			  					android:layout_height="wrap_content"	
+			  					android:background="@drawable/ic_btn"
+			  					android:textColor="@drawable/ic_btn_color"
+			  					android:textSize="25dp"
+			  							  			
+			  			/>
+			  			<Button
+			  					android:id="@+id/p_broj5"
+			  					android:onClick="addBroj"
+			  					android:text="5"
+			  					android:layout_width="wrap_content"
+			  					android:layout_height="wrap_content"	
+			  					android:background="@drawable/ic_btn"
+			  					android:textColor="@drawable/ic_btn_color"
+			  					android:textSize="25dp"
+			  							  			
+			  			/>		
+				  </LinearLayout>	
+	  	</TableRow>
+	   <TableRow>
+	  		<LinearLayout android:orientation="horizontal"
+									  	android:layout_width="fill_parent"
+									  	android:layout_height="wrap_content"
+									  	android:paddingRight="5dp"	
+									  	android:gravity="right"	
+									  	android:layout_weight="1"									  							  	
+									  	>
+			  			<!-- Brojevi -->
+			  			<Button
+			  					android:id="@+id/p_broj6"
+			  					android:onClick="addBroj"
+			  					android:text="6"
+			  					android:layout_width="wrap_content"
+			  					android:layout_height="wrap_content"	
+			  					android:background="@drawable/ic_btn"
+			  					android:textColor="@drawable/ic_btn_color"
+			  					android:textSize="25dp"				  														  							  		
+			  			/>
+			  			<Button
+			  					android:id="@+id/p_broj7"
+			  					android:onClick="addBroj"
+			  					android:text="7"
+			  					android:layout_width="wrap_content"
+			  					android:layout_height="wrap_content"	
+			  					android:background="@drawable/ic_btn"
+			  					android:textColor="@drawable/ic_btn_color"
+			  					android:textSize="25dp"
+			  						  			
+			  			/>
+			  			<Button
+			  					android:id="@+id/p_broj8"
+			  					android:onClick="addBroj"
+			  					android:text="8"
+			  					android:layout_width="wrap_content"
+			  					android:layout_height="wrap_content"	
+			  					android:background="@drawable/ic_btn"
+			  					android:textColor="@drawable/ic_btn_color"
+			  					android:textSize="25dp"
+			  							  			
+			  			/>
+			  			<Button
+			  					android:id="@+id/p_broj9"
+			  					android:onClick="addBroj"
+			  					android:text="9"
+			  					android:layout_width="wrap_content"
+			  					android:layout_height="wrap_content"	
+			  					android:background="@drawable/ic_btn"
+			  					android:textColor="@drawable/ic_btn_color"
+			  					android:textSize="25dp"
+			  							  			
+			  			/>
+			  			<Button
+			  					android:id="@+id/p_broj0"
+			  					android:onClick="addBroj"
+			  					android:text="0"
+			  					android:layout_width="wrap_content"
+			  					android:layout_height="wrap_content"	
+			  					android:background="@drawable/ic_btn"
+			  					android:textColor="@drawable/ic_btn_color"
+			  					android:textSize="25dp"
+			  							  			
+			  			/>	  			
+				  </LinearLayout>	
+	  	</TableRow>
+  	</TableLayout>
+  </LinearLayout>
+
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"						
+	>
+	  <TextView 
+	  	android:text="@string/txtUkupnaCijena"
+	  	android:textColor="#8CC1D8"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:paddingTop="5dp"
+    />
+		<TextView android:id="@+id/p_ukupnaCijena"
+		  					android:text="0.00 kn"
+		  					android:textSize="20dp"
+		  					android:textColor="#FAA51B"  					  				
+		  					android:layout_width="fill_parent"
+		  					android:layout_height="wrap_content"
+		  					android:paddingRight="20dp"
+		  					android:paddingLeft="20dp"
+		  					android:gravity="center"
+		  					
+		   />
+	
+	</LinearLayout>
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:paddingTop="5dp"	
+			android:paddingBottom="5dp"
+			android:scrollbars="vertical"		
+			
+	>
+	 <Button android:id="@+id/addProizvod"
+	 				 android:text="@string/menu_p_accept"
+	 				 android:layout_width="fill_parent"
+	 				 android:layout_height="wrap_content" 
+	 				 android:layout_weight="1"
+	 				 android:onClick="save"
+	 />
+	 
+	 <Button android:id="@+id/close"
+	 				 android:text="@string/menu_p_cancel"
+	 				 android:layout_width="fill_parent"
+	 				 android:layout_height="wrap_content" 
+	 				 android:layout_weight="1"
+	 				 android:onClick="close"
+	 				 
+	 />
+	
+	</LinearLayout>
+	
+
+</LinearLayout>
+</ScrollView>

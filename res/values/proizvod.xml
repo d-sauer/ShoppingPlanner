@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="txt_name">Naziv artikla</string>
+	<string name="txt_opis">Opis artikla</string>
+	<string name="txt_price">Cijena artikla</string>
+	<string name="txtKolicina">Količina</string>
+	<string name="txtCijena">Cijena</string>
+	<string name="txtUkupnaCijena">Ukupna cijena</string>
+	
+	<string name="menu_p_accept">Prihvati</string>
+	<string name="menu_p_cancel">Odustani</string>
+	<string name="menu_p_find">Pronađi postojeći artikal</string>
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/my_tabhost"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent">
+      <TabWidget
+         android:id="@android:id/tabs"
+         android:layout_width="fill_parent"
+         android:layout_height="65px"/>
+      <FrameLayout
+           android:id="@android:id/tabcontent"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:paddingBottom="2dp"
+           android:paddingTop="65px">
+            <!-- Tab s popisom artikala u kosarici -->
+            <LinearLayout
+                 android:id="@+id/shoping_list"                 
+                 android:orientation="vertical"                 
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent">
+                <!-- layout koji sadrži listu view -->
+                <!-- bitno je: android:layout_weight="1"  -->
+                <LinearLayout                                          
+                 android:orientation="vertical"                 
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"                  
+                 android:layout_weight="1" 
+                 android:onClick="addNewProizvod"                      	
+                 >
+		                <ListView android:id="@+id/list_list"
+							          android:layout_width="fill_parent"
+							        	android:layout_height="wrap_content"					        	
+							        	/>										
+								</LinearLayout>
+
+                <TableLayout
+                 android:id="@+id/shoping_list_suma"                                 
+                 android:orientation="horizontal"                 
+                 android:layout_width="fill_parent"
+                 android:layout_height="20dp"
+                 android:stretchColumns="1"                  
+                 android:gravity="right"           	 
+                 >  
+                 
+	               <TableRow>
+	                	<TextView android:text="Br. artikala: " 			                		                 	 		                 
+		                 	android:layout_width="wrap_content" 
+		                 	android:layout_height="17dp"		                 	
+		                 	android:paddingLeft="10dp"
+		                 	android:textSize="13dp"
+		                 	android:gravity="center"
+		                 	android:textColor="#8CC1D8"		                 	
+		                 	 />
+	               
+			               <TextView  			                
+		                 	android:id="@+id/list_br_artikala" 		                 	
+		                 	android:layout_width="wrap_content" 
+		                 	android:layout_height="wrap_content"
+		                 	android:paddingRight="50dp"
+		                 	android:textSize="17dp"	
+		                 	android:textColor="#FAA51B"		                 		                 	
+		                 	 />
+		                 	 
+		                 <TextView android:text="Suma: " 			                		                 	 		                 
+		                 	android:layout_width="wrap_content" 
+		                 	android:layout_height="17dp"		                 	
+		                 	android:paddingLeft="10dp"
+		                 	android:textSize="13dp"
+		                 	android:gravity="center"
+		                 	android:textColor="#8CC1D8"		                 	
+		                 	 />	 
+		                 	 
+			               <TextView android:text="0.00 kn" 
+			              		  android:gravity="right"			               	                	 
+				                 	android:id="@+id/list_suma"				                 	 
+				                 	android:layout_width="fill_parent" 
+				                 	android:layout_height="wrap_content"	
+				                  android:textSize="17dp"	
+		                 			android:textColor="#FAA51B"
+		                 			android:paddingRight="10dp"		                 		 		                 	                	
+				                 	/>
+				          </TableRow>
+	               </TableLayout>
+            </LinearLayout>
+            
+            <!-- Wish list tab -->
+             <LinearLayout
+                 android:id="@+id/shoping_wishlist"                 
+                 android:orientation="vertical"                 
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent">
+                <!-- layout koji sadrži listu view -->
+                <!-- bitno je: android:layout_weight="1"  -->
+                <LinearLayout                                          
+                 android:orientation="vertical"                 
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"                  
+                 android:layout_weight="1"   
+                 android:onClick="addNewProizvod"                    	
+                 >
+		                <ListView android:id="@+id/list_wishlist"
+							          android:layout_width="fill_parent"
+							        	android:layout_height="wrap_content"					        	
+							        	/>
+								</LinearLayout>
+
+                <TableLayout
+                 android:id="@+id/shoping_wishlist_suma"                                 
+                 android:orientation="horizontal"                 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"                 
+                 android:stretchColumns="1" 
+                 android:gravity="right"           	 
+                 >  
+	               <TableRow>	    
+	               		<TextView android:text="Br. artikala: " 			                		                 	 		                 
+		                 	android:layout_width="wrap_content" 
+		                 	android:layout_height="17dp"		                 	
+		                 	android:paddingLeft="10dp"
+		                 	android:textSize="13dp"
+		                 	android:gravity="center"
+		                 	android:textColor="#8CC1D8"		                 	
+		                 	 />
+	                          
+			               <TextView android:id="@+id/wishlist_br_artikala" 		                 	
+		                 	android:layout_width="wrap_content" 
+		                 	android:layout_height="fill_parent"
+		                 	android:paddingRight="50dp"
+		                 	android:textSize="17dp"	
+		                 	android:textColor="#FAA51B"	
+		                 	 />
+		                 	 
+		                 <TextView android:text="Suma: " 			                		                 	 		                 
+		                 	android:layout_width="wrap_content" 
+		                 	android:layout_height="17dp"		                 	
+		                 	android:paddingLeft="10dp"
+		                 	android:textSize="13dp"
+		                 	android:gravity="center"
+		                 	android:textColor="#8CC1D8"		                 	
+		                 	 />	 	 
+		                 	 
+			               <TextView android:text="0.00 kn" 
+			              		  android:gravity="right"			               	                	 
+				                 	android:id="@+id/wishlist_suma"				                 	 
+				                 	android:layout_width="fill_parent" 
+				                 	android:layout_height="wrap_content"					                 		
+				                  android:textSize="17dp"	
+		                 			android:textColor="#FAA51B"
+		                 			android:paddingRight="10dp"	                		 		                 	                	
+				                 	/>
+				          </TableRow>
+	               </TableLayout>
+            </LinearLayout>
+       </FrameLayout>
+</TabHost>

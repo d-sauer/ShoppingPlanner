@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:padding="5dp"
+  >
+  
+  <TextView android:id="@+id/sr_naziv"
+  					android:layout_width="fill_parent"
+  					android:layout_height="wrap_content" 						 
+						android:textSize="17dp"	
+						android:textColor="#8CC1D8"			
+						android:layout_weight="1"	
+  					/>
+  					
+		<LinearLayout
+		  xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:orientation="vertical"
+		  android:gravity="center_horizontal"
+		  >
+		  
+		  <TextView android:id="@+id/sr_cijena"
+		  					android:layout_width="fill_parent"
+		  					android:layout_height="wrap_content" 
+								android:text="1000000.90 kn"
+								android:textSize="20dp"
+								android:textColor="#FAA51B"
+								android:textStyle="bold"
+								android:gravity="center" 	
+												
+		  					/>
+		  <TextView android:id="@+id/sr_kolicina_cijena"
+ 					android:layout_width="fill_parent"
+ 					android:layout_height="wrap_content" 
+					android:text=" 2 x 5 kn"  		
+					android:textColor="#BF511F"
+					android:gravity="center"	
+					android:textSize="12dp"		
+ 					/>
+		  					
+		  					  
+		</LinearLayout>  					  
+</LinearLayout>

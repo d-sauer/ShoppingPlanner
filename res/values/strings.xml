@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Troškovnik</string>
+    <string name="new_shoping">Nova kupovina</string>
+    <string name="last_shoping">Zadnja kupovina</string>
+    <string name="shoping_list">Popis kupovina</string>
+    <string name="article_list">Popis artikala</string>
+    
+    <string name="shop_list">Košarica</string>
+    <string name="shop_wishlist">Planirano</string>
+    
+    <string name="no_records">Nema artikala</string>
+    
+    <string name="menu_list_insert">Novi artikl</string>
+    <string name="menu_add_existing">Dodaj postojeći artikal</string>
+    <string name="menu_sort">Poredak</string>
+   	<string name="menu_del_from_popis">Obriši</string> 
+   	
+   	<string name="s_move_to_wishlist">Premjesti u planirano</string>
+   	<string name="s_move_to_list">Premjesti u košaricu</string> 
+   	<string name="s_delete">Obriši</string> 
+   	<string name="s_opis">Opis</string> 
+   	
+    <string name="ls_delete_shoping">Obriši kupovinu</string> 
+    
+    <string name="lsd_period">Definiraj period</string>
+    <string name="lsd_reset">Prikaži sve</string> 
+</resources>

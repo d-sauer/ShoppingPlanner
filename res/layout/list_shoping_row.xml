@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingBottom="5dp"
+		>
+		
+		<TextView android:id="@+id/lsr_list"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="21dp"		       
+		    android:textColor="#FAA51B"
+		    android:paddingLeft="5dp"
+		    android:textStyle="bold"		   
+		    />
+
+		<LinearLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:layout_weight="1"	
+		>
+		<TextView android:id="@+id/lsr_datum"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="21dp"		       
+		    android:textColor="#8CC1D8"
+		    android:paddingLeft="5dp"
+		    android:textStyle="bold"		   
+		    />
+
+		 <TextView android:id="@+id/lsr_dan"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textSize="13dp"		    	    
+		    android:textColor="#8CC1D8"
+		    android:paddingLeft="5dp"		    		    
+		    />
+		  </LinearLayout>
+		   
+		<TextView android:id="@+id/lsr_ukCijena"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"		    
+		    android:textSize="21dp"		    
+		    android:textColor="#FAA51B"
+		    android:paddingRight="10dp"		   
+		    />
+
+		<TextView android:id="@+id/lsr_brArtikala"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="14dp"	  
+		    android:textColor="#8CC1D8"
+		    android:paddingRight="10dp"		    
+		 />
+
+</LinearLayout>
+

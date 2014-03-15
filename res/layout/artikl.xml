@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		  xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:layout_width="fill_parent"
+		  android:layout_height="fill_parent"
+		  android:orientation="vertical"
+		  android:padding="5dp"
+		  >
+  <LinearLayout		  
+		  android:layout_width="fill_parent"
+		  android:layout_height="fill_parent"
+		  android:orientation="vertical"
+		  android:layout_weight="1"
+		  >
+	  <TextView 
+	  	android:text="@string/txt_name"
+	  	android:textColor="#8CC1D8"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	    />
+	   <EditText android:id="@+id/art_proizvod" 
+			  android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+			/>
+			<TextView 
+	  	android:text="@string/txt_opis"
+	  	android:textColor="#8CC1D8"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	    />
+			<EditText android:id="@+id/art_opis" 
+			  android:layout_width="fill_parent"
+				android:layout_height="fill_parent" 
+				android:gravity="top"
+			/>
+	</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="5dp"	
+			android:paddingBottom="5dp"
+			android:scrollbars="vertical"		
+			
+		>
+			 <Button android:id="@+id/addProizvod"
+			 				 android:text="@string/menu_p_accept"
+			 				 android:layout_width="fill_parent"
+			 				 android:layout_height="wrap_content" 
+			 				 android:layout_weight="1"
+			 				 android:onClick="save"
+			 />
+			 
+			 <Button android:id="@+id/close"
+			 				 android:text="@string/menu_p_cancel"
+			 				 android:layout_width="fill_parent"
+			 				 android:layout_height="wrap_content" 
+			 				 android:layout_weight="1"
+			 				 android:onClick="close"
+			 				 
+			 />
+	
+	</LinearLayout>
+</LinearLayout>

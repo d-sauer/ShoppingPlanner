@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:paddingBottom="5px"    
+    >
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    
+    >
+		
+  <ImageView
+  					android:src="@drawable/title"
+  					android:layout_width="wrap_content"
+  					android:layout_height="wrap_content" 				
+  />
+  
+  
+  <ImageView android:src="@drawable/title02"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+		android:scaleType="fitXY"	  	
+  />
+  
+  
+  </LinearLayout>
+
+	  <ImageView android:src="@drawable/title_line"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+		android:scaleType="fitXY"	  	
+  />
+
+
+	  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#000000"
+	    android:padding="10dp"
+	    
+	    >
+
+			<Button 
+			  android:onClick="newShoping"
+			  android:layout_margin="10dp"
+			  android:layout_weight="1"
+			  android:textSize="20dp"
+			  android:textColorHighlight="#FAA51B"
+				android:textColor="#38839C"
+			  android:text="@string/new_shoping" 		
+				android:id="@+id/new_shoping" 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:gravity="center_vertical|center_horizontal"    
+		    android:layout_gravity="center_vertical|center_horizontal|center" 
+		    /> 
+		
+			<Button 
+				android:onClick="lastShoping"
+				android:layout_margin="10dp"
+				android:text="@string/last_shoping"
+			  android:layout_weight="1" 
+			  android:textSize="20dp"
+			  android:textColorHighlight="#FAA51B"
+			  android:textColor="#38839C"
+				android:id="@+id/last_shoping" 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:gravity="center_vertical|center_horizontal"    
+		    android:layout_gravity="center_vertical|center_horizontal|center" /> 
+		
+		<Button android:text="@string/shoping_list" 
+				android:onClick="shopingList"
+				android:layout_margin="10dp"
+				android:layout_weight="1"
+				android:textSize="20dp"
+			  android:textColorHighlight="#FAA51B"				
+			  android:textColor="#38839C"
+				android:id="@+id/shoping_list" 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"				
+				android:gravity="center_vertical|center_horizontal"    
+		    android:layout_gravity="center_vertical|center_horizontal|center" /> 
+		
+		<Button android:text="@string/article_list" 
+				android:onClick="artikli"
+				android:layout_margin="10dp"
+				android:layout_weight="1"
+			  android:textSize="20dp"
+			  android:textColorHighlight="#FAA51B"				
+			  android:textColor="#38839C"
+				android:id="@+id/shoping_list" 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:gravity="center_vertical|center_horizontal"    
+		    android:layout_gravity="center_vertical|center_horizontal|center" /> 
+
+		</LinearLayout>
+
+</LinearLayout>
